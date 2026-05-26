@@ -1,6 +1,6 @@
 * {
-	margin:  0px;
-	padding:  0px;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 }
 
@@ -9,10 +9,12 @@
 body {
 	font-family: -apple-system, BlinkMacSystemFont, helvetica, arial, sans-serif;
 	transition: background 500ms ease;
+	background: #111;
+	color: white;
 }
 
 p, li {
-	font-size:  22px;
+	font-size: 22px;
 	line-height: 30px;
 }
 
@@ -23,7 +25,7 @@ p, li {
 }
 
 h1, p {
-	margin-bottom:  20px;
+	margin-bottom: 20px;
 }
 
 ul, ol {
@@ -32,29 +34,37 @@ ul, ol {
 
 img {
 	max-width: 100%;
-	height:  auto;
+	height: auto;
 }
 
-/* uncomment the code below to set the grid */
-
-/*#grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+a {
+	color: #ffcc00;
 }
 
-body {
+/* interactive type */
+
+.type-section {
+	margin-top: 80px;
+	min-height: 300px;
+	border: 1px solid white;
+	padding: 40px;
 	overflow: hidden;
 }
 
-.scroll {
-	padding:  20px;
-	overflow: scroll;
-	height: 100vh;
+.interactive-title {
+	font-size: 18px;
+	letter-spacing: 2px;
+	opacity: 0.6;
+	margin-bottom: 30px;
 }
 
-#left-column {
+.interactive-type {
+	font-size: 80px;
+	font-weight: 900;
+	line-height: 0.9;
+	letter-spacing: 0px;
+	transition:
+		transform 0.2s ease,
+		letter-spacing 0.2s ease,
+		color 0.2s ease;
 }
-
-#right-column {
-	background: #333;
-}*/
