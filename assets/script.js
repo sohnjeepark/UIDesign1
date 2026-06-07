@@ -1,18 +1,36 @@
-const type = document.querySelector(".interactive-type");
+const cursor = document.querySelector(".cursor");
+const typeTexts = document.querySelectorAll(".interactive-type");
+const body = document.body;
 
 document.addEventListener("mousemove", function(event) {
   const x = event.clientX;
   const y = event.clientY;
 
-  const windowWidth = window.innerWidth;
-  const windowHeight = window.innerHeight;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
 
-  const xPercent = x / windowWidth;
-  const yPercent = y / windowHeight;
+  const xPercent = x / window.innerWidth;
+  const yPercent = y / window.innerHeight;
 
-  const letterSpace = xPercent * 30;
-  const scale = 1 + yPercent * 1.5;
+  const letterSpacing = xPercent * 35 - 10;
+  const moveAmount = yPercent * 80 - 40;
 
-  type.style.letterSpacing = letterSpace + "px";
-  type.style.transform = `scale(${scale})`;
+  typeTexts.forEach(function(type, index) {
+    type.style.letterSpacing = letterSpacing + "px";
+
+    if (index % 2 === 0) {
+      type.style.transform = `translateX(${moveAmount}px)`;
+    } else {
+      type.style.transform = `translateX(${-moveAmount}px)`;
+    }
+  });
+
+  const lightness = 8 + yPercent * 12;
+  body.style.background = `hsl(0, 0%, ${lightness}%)`;
+});
+
+document.addEventListener("click", function() {
+  typeTexts.forEach(function(type) {
+    type.classList.toggle("outline");
+  });
 });
