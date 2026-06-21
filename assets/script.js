@@ -296,3 +296,47 @@ if (mediaItems && mediaLightbox && mediaLightboxContent) {
     mediaLightboxContent.innerHTML = "";
   });
 }
+
+const asciiSwitchLinks = document.querySelectorAll(".ascii-switch-link");
+
+asciiSwitchLinks.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const target = link.getAttribute("href");
+
+    link.classList.add("is-clicked");
+
+    setTimeout(() => {
+      window.location.href = target;
+    }, 360);
+  });
+});
+
+const sectionLinks = document.querySelectorAll(".side-nav nav a");
+const observedSections = document.querySelectorAll("#home, #works, #library, #media");
+
+const sectionObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio >= 0.5) {
+        const currentId = entry.target.getAttribute("id");
+
+        sectionLinks.forEach((link) => {
+          link.classList.remove("active");
+
+          if (link.getAttribute("href") === `#${currentId}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  },
+  {
+    threshold: [0, 0.25, 0.5, 0.75, 1]
+  }
+);
+
+observedSections.forEach((section) => {
+  sectionObserver.observe(section);
+});
