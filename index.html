@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <title>Sohnjee Park | UI Design Programming 1</title>
   <meta charset="utf-8" />
@@ -9,55 +8,1115 @@
 
 <body>
 
-  <div class="cursor"></div>
+  <button class="theme-toggle" id="themeToggle">Dark</button>
 
-  <main class="page">
+  <aside class="side-nav">
+    <div class="logo">
+      <span>S</span>
+      <i></i>
+      <span>P</span>
+    </div>
+
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="#works">Works</a>
+      <a href="#library">Library</a>
+      <a href="#media">Album</a>
+    </nav>
+
+    <p class="copyright">© 2026<br>Sohnjee Park</p>
+  </aside>
+
+  <main class="site-main">
 
     <section class="hero">
-      <p class="small-text">UI Design Programming 1</p>
 
-      <h1 class="main-title">
-        <span>Sohnjee</span>
-        <span>Park</span>
-      </h1>
+      <div class="hero-red-panel">
+        <p class="hero-small">UI Design<br>Programming 1</p>
 
-      <p class="desc">
-        A personal website that reacts to movement, type, rhythm, and mood.
+        <div class="title-wrap">
+          <h1 class="main-title title-base">
+            <span>Sohnjee</span>
+            <span>Park</span>
+          </h1>
+
+          <h1 class="main-title title-cover">
+            <span>Sohnjee</span>
+            <span>Park</span>
+          </h1>
+        </div>
+
+      <p class="intro">
+        I am a design student at Seoul National University, currently based in Yongsan, Seoul.
+        I enjoy reading literature and drinking tea, with a particular interest in Japanese and German literature.
+        I am drawn to rock music, especially Radiohead, Cocteau Twins, and TV Girl,
+        and I also have a deep interest in classical painting.
       </p>
+
+        <p class="scroll-text">Scroll to explore ↓</p>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-meta">
+          <span>Seoul</span>
+          <span>2026</span>
+        </div>
+
+        <p class="vertical-label">Interaction / Design / Personal Website</p>
+
+        <div class="favorites">
+          <p>Favorites</p>
+
+          <a href="https://wplace.live/" target="_blank">
+            My favorite website is Wplace ↗
+          </a>
+
+          <a href="https://en.wikipedia.org/wiki/Lasagna" target="_blank">
+            My favorite food is Lasagna ↗
+          </a>
+
+          <a href="https://www.youtube.com/results?search_query=Pearl+Jam+Alive" target="_blank">
+            My favorite song is Pearl Jam’s Alive ↗
+          </a>
+
+          <a href="https://twgkorea.com/product/오뜨-쿠튀르-티-잎차/171/category/23/display/1/" target="_blank">
+            My favorite tea is Haute Couture Tea ↗
+          </a>
+
+          <a href="https://product.kyobobook.co.kr/detail/S000000407340" target="_blank">
+            My favorite book is The Temple of the Golden Pavilion ↗
+          </a>
+        </div>
+      </div>
+
     </section>
 
-    <section class="info">
-      <div class="card">
-        <p class="label">Favorite Food</p>
-        <h2>Lasagna</h2>
+    <section class="works" id="works">
+      <div class="section-head">
+        <div>
+          <span class="section-number">01</span>
+          <p>Selected Works</p>
+        </div>
+
+        <h2>Archive</h2>
       </div>
 
-      <div class="card">
-        <p class="label">Favorite Song</p>
-        <h2>Alive<br>by Pearl Jam</h2>
-      </div>
+      <div class="work-list">
 
-      <div class="card">
-        <p class="label">Favorite Website</p>
-        <h2>
-          <a href="https://www.nytimes.com" target="_blank">Wplace</a>
-        </h2>
+        <a class="work-row" href="ascii-house.html">
+          <span class="num">01</span>
+          <span class="title">ASCII Gwanghwamun</span>
+          <span class="type">Text Architecture</span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="work-row" href="ascii-interior.html">
+        <span class="num">02</span>
+        <span class="title">ASCII Interior</span>
+        <span class="type">Inside Gwanghwamun</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="work-row"
+        href="https://www.figma.com/proto/icFtdcNeKGmAqKDoMpNEPf/PARK-Sohnjee-poster?node-id=49-2&page-id=48%3A2&starting-point-node-id=49%3A2&t=1M4flTyhKP4Wog64-1"
+        target="_blank"
+        rel="noopener noreferrer">
+        <span class="num">03</span>
+        <span class="title">Interactive Poster</span>
+        <span class="type">Figma Prototype</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="work-row" href="gif.html">
+        <span class="num">04</span>
+        <span class="title">GIF Study</span>
+        <span class="type">Motion Archive</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="work-row" href="tea-still-life.html">
+        <span class="num">05</span>
+        <span class="title">Tea Still Life</span>
+        <span class="type">CSS Drawing</span>
+        <span class="arrow">→</span>
+      </a>
+
+      <a class="work-row" href="tea-shelf.html">
+        <span class="num">06</span>
+        <span class="title">Tea Shelf</span>
+        <span class="type">CSS Shelf</span>
+        <span class="arrow">→</span>
+      </a>
+
+        <a class="work-row" href="https://sohnjeepark.github.io/UIDesign1/clock/clock.html" target="_blank">
+          <span class="num">07</span>
+          <span class="title">The Trial Clock</span>
+          <span class="type">Interactive Clock</span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="work-row" href="https://www.figma.com/design/3pn3mglbAKBIa8FHcEhOnz/P1-Prototype?node-id=0-1&t=TDqbefQ7JXBCD21q-1" target="_blank">
+          <span class="num">08</span>
+          <span class="title">P1 BLATT</span>
+          <span class="type">Figma Prototype</span>
+          <span class="arrow">→</span>
+        </a>
+
+        <a class="work-row" href="https://sohnjeepark.github.io/Flowcharts/index.html" target="_blank">
+          <span class="num">09</span>
+          <span class="title">Reading Flowcharts</span>
+          <span class="type">Literary Interface</span>
+          <span class="arrow">→</span>
+        </a>
+
       </div>
     </section>
 
-    <section class="interactive-section">
-      <p class="small-text">Move your mouse</p>
 
-      <div class="type-box">
-        <p class="interactive-type">TYPE</p>
-        <p class="interactive-type outline">MOVES</p>
-        <p class="interactive-type">WITH YOU</p>
+
+    <section class="book-archive" id="library">
+<div class="book-head">
+  <div>
+    <p>Reading Archive</p>
+    <span class="book-scroll-note">
+      Browse the archive horizontally, and click a book to view it on Kyobo Bookstore.
+    </span>
+  </div>
+
+  <h2>Library</h2>
+</div>
+
+  <div class="book-track-wrap">
+    <div class="book-track">
+
+      <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000619590"
+      target="_blank">
+      <img src="assets/books/norwegianwood.jpg" alt="Norwegian Wood">
+
+      <div class="book-info">
+        <span class="book-number">#001</span>
+
+        <span class="book-author">
+          HARUKI MURAKAMI
+        </span>
+
+        <span class="book-title">
+          Norwegian Wood
+        </span>
       </div>
-    </section>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000778568"
+    target="_blank">
+      <img src="assets/books/lolita.jpg" alt="Lolita">
+      <div class="book-info">
+        <span class="book-number">#002</span>
+        <span class="book-author">VLADIMIR NABOKOV</span>
+        <span class="book-title">Lolita</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000828422"
+    target="_blank">
+      <img src="assets/books/romanticlove.jpg" alt="The Course of Love">
+      <div class="book-info">
+        <span class="book-number">#003</span>
+        <span class="book-author">ALAIN DE BOTTON</span>
+        <span class="book-title">The Course of Love</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000778486"
+    target="_blank">
+      <img src="assets/books/simplepassion.jpg" alt="Simple Passion">
+      <div class="book-info">
+        <span class="book-number">#004</span>
+        <span class="book-author">ANNIE ERNAUX</span>
+        <span class="book-title">Simple Passion</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620376"
+    target="_blank">
+      <img src="assets/books/notesunderground.jpg" alt="Notes from Underground">
+      <div class="book-info">
+        <span class="book-number">#005</span>
+        <span class="book-author">FYODOR DOSTOEVSKY</span>
+        <span class="book-title">Notes from Underground</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000781292"
+    target="_blank">
+      <img src="assets/books/obsession.jpg" alt="The Possession">
+      <div class="book-info">
+        <span class="book-number">#006</span>
+        <span class="book-author">ANNIE ERNAUX</span>
+        <span class="book-title">The Possession</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000619973"
+    target="_blank">
+      <img src="assets/books/stranger.jpg" alt="The Stranger">
+      <div class="book-info">
+        <span class="book-number">#007</span>
+        <span class="book-author">ALBERT CAMUS</span>
+        <span class="book-title">The Stranger</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000598387"
+    target="_blank">
+      <img src="assets/books/shame.jpg" alt="Shame">
+      <div class="book-info">
+        <span class="book-number">#008</span>
+        <span class="book-author">ANNIE ERNAUX</span>
+        <span class="book-title">Shame</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000781282"
+     target="_blank">
+      <img src="assets/books/casanovahotel.jpg" alt="Casanova Hotel">
+      <div class="book-info">
+        <span class="book-number">#009</span>
+        <span class="book-author">ANNIE ERNAUX</span>
+        <span class="book-title">Casanova Hotel</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000061863290"
+    target="_blank">
+      <img src="assets/books/trilogy.jpg" alt="The Notebook, The Proof, The Third Lie">
+      <div class="book-info">
+        <span class="book-number">#010</span>
+        <span class="book-author">AGOTA KRISTOF</span>
+        <span class="book-title">The Notebook, The Proof, The Third Lie</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000215970366"
+    target="_blank">
+      <img src="assets/books/yi-sang.jpg" alt="Selected Works of Yi Sang">
+      <div class="book-info">
+        <span class="book-number">#011</span>
+        <span class="book-author">YI SANG</span>
+        <span class="book-title">Selected Works of Yi Sang</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620198"
+    target="_blank">
+      <img src="assets/books/snowcountry.jpg" alt="Snow Country">
+      <div class="book-info">
+        <span class="book-number">#012</span>
+        <span class="book-author">KAWABATA YASUNARI</span>
+        <span class="book-title">Snow Country</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000621251"
+    target="_blank">
+      <img src="assets/books/festival.jpg" alt="The Festival of Insignificance">
+      <div class="book-info">
+        <span class="book-number">#013</span>
+        <span class="book-author">MILAN KUNDERA</span>
+        <span class="book-title">The Festival of Insignificance</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000619722"
+    target="_blank">
+      <img src="assets/books/lightness.jpg" alt="The Unbearable Lightness of Being">
+      <div class="book-info">
+        <span class="book-number">#014</span>
+        <span class="book-author">MILAN KUNDERA</span>
+        <span class="book-title">The Unbearable Lightness of Being</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620480"
+    target="_blank">
+      <img src="assets/books/sisyphus.jpg" alt="The Myth of Sisyphus">
+      <div class="book-info">
+        <span class="book-number">#015</span>
+        <span class="book-author">ALBERT CAMUS</span>
+        <span class="book-title">The Myth of Sisyphus</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620410"
+    target="_blank">
+      <img src="assets/books/glassbead1.jpg" alt="The Glass Bead Game 1">
+      <div class="book-info">
+        <span class="book-number">#016</span>
+        <span class="book-author">HERMANN HESSE</span>
+        <span class="book-title">The Glass Bead Game 1</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620411"
+    target="_blank">
+      <img src="assets/books/glassbead2.jpg" alt="The Glass Bead Game 2">
+      <div class="book-info">
+        <span class="book-number">#017</span>
+        <span class="book-author">HERMANN HESSE</span>
+        <span class="book-title">The Glass Bead Game 2</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620404"
+    target="_blank">
+      <img src="assets/books/plague.jpg" alt="The Plague">
+      <div class="book-info">
+        <span class="book-number">#018</span>
+        <span class="book-author">ALBERT CAMUS</span>
+        <span class="book-title">The Plague</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000549260"
+    target="_blank">
+      <img src="assets/books/nausea.jpg" alt="Nausea">
+      <div class="book-info">
+        <span class="book-number">#019</span>
+        <span class="book-author">JEAN-PAUL SARTRE</span>
+        <span class="book-title">Nausea</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000001136422"
+    target="_blank">
+      <img src="assets/books/blindness.jpg" alt="Blindness">
+      <div class="book-info">
+        <span class="book-number">#020</span>
+        <span class="book-author">JOSÉ SARAMAGO</span>
+        <span class="book-title">Blindness</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000001136730"
+    target="_blank">
+      <img src="assets/books/seeing.jpg" alt="Seeing">
+      <div class="book-info">
+        <span class="book-number">#021</span>
+        <span class="book-author">JOSÉ SARAMAGO</span>
+        <span class="book-title">Seeing</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620436"
+    target="_blank">
+      <img src="assets/books/absalom.jpg" alt="Absalom, Absalom!">
+      <div class="book-info">
+        <span class="book-number">#022</span>
+        <span class="book-author">WILLIAM FAULKNER</span>
+        <span class="book-title">Absalom, Absalom!</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000581291"
+    target="_blank">
+      <img src="assets/books/zorba.jpg" alt="Zorba the Greek">
+      <div class="book-info">
+        <span class="book-number">#023</span>
+        <span class="book-author">NIKOS KAZANTZAKIS</span>
+        <span class="book-title">Zorba the Greek</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000001280109"
+    target="_blank">
+      <img src="assets/books/lifebeforeus.jpg" alt="The Life Before Us">
+      <div class="book-info">
+        <span class="book-number">#024</span>
+        <span class="book-author">EMIL AZAR</span>
+        <span class="book-title">The Life Before Us</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000201621499"
+    target="_blank">
+      <img src="assets/books/gu.jpg" alt="Proof of Gu">
+      <div class="book-info">
+        <span class="book-number">#025</span>
+        <span class="book-author">CHOI JIN-YOUNG</span>
+        <span class="book-title">Proof of Gu</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000201114163"
+    target="_blank">
+      <img src="assets/books/atonement.jpg" alt="Atonement">
+      <div class="book-info">
+        <span class="book-number">#026</span>
+        <span class="book-author">IAN McEWAN</span>
+        <span class="book-title">Atonement</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620351"
+    target="_blank">
+      <img src="assets/books/razorsedge.jpg" alt="The Razor's Edge">
+      <div class="book-info">
+        <span class="book-number">#027</span>
+        <span class="book-author">W. SOMERSET MAUGHAM</span>
+        <span class="book-title">The Razor's Edge</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620284"
+    target="_blank">
+      <img src="assets/books/lot49.jpg" alt="The Crying of Lot 49">
+      <div class="book-info">
+        <span class="book-number">#028</span>
+        <span class="book-author">THOMAS PYNCHON</span>
+        <span class="book-title">The Crying of Lot 49</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000200205332"
+    target="_blank">
+      <img src="assets/books/essaysinlove.jpg" alt="Essays in Love">
+      <div class="book-info">
+        <span class="book-number">#029</span>
+        <span class="book-author">ALAIN DE BOTTON</span>
+        <span class="book-title">Essays in Love</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620207"
+    target="_blank">
+      <img src="assets/books/chekhov.jpg" alt="Chekhov Short Stories">
+      <div class="book-info">
+        <span class="book-number">#030</span>
+        <span class="book-author">ANTON CHEKHOV</span>
+        <span class="book-title">Chekhov Short Stories</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000575616"
+    target="_blank">
+      <img src="assets/books/magicmountain1.jpg" alt="The Magic Mountain">
+      <div class="book-info">
+        <span class="book-number">#031</span>
+        <span class="book-author">THOMAS MANN</span>
+        <span class="book-title">The Magic Mountain</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000407340"
+    target="_blank">
+      <img src="assets/books/goldenpavilion.jpg" alt="The Temple of the Golden Pavilion">
+      <div class="book-info">
+        <span class="book-number">#032</span>
+        <span class="book-author">YUKIO MISHIMA</span>
+        <span class="book-title">The Temple of the Golden Pavilion</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620701"
+    target="_blank">
+      <img src="assets/books/springsnow.jpg" alt="Spring Snow">
+      <div class="book-info">
+        <span class="book-number">#033</span>
+        <span class="book-author">YUKIO MISHIMA</span>
+        <span class="book-title">Spring Snow</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620281"
+    target="_blank">
+      <img src="assets/books/lover.jpg" alt="The Lover">
+      <div class="book-info">
+        <span class="book-number">#034</span>
+        <span class="book-author">MARGUERITE DURAS</span>
+        <span class="book-title">The Lover</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620162"
+    target="_blank">
+      <img src="assets/books/werther.jpg" alt="The Sorrows of Young Werther">
+      <div class="book-info">
+        <span class="book-number">#035</span>
+        <span class="book-author">GOETHE</span>
+        <span class="book-title">The Sorrows of Young Werther</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000214869923"
+    target="_blank">
+      <img src="assets/books/dictee.jpg" alt="Dictee">
+      <div class="book-info">
+        <span class="book-number">#036</span>
+        <span class="book-author">THERESA HAK-KYUNG CHA</span>
+        <span class="book-title">DICTEE</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000702854"
+    target="_blank">
+      <img src="assets/books/sodom.jpg" alt="The 120 Days of Sodom">
+      <div class="book-info">
+        <span class="book-number">#037</span>
+        <span class="book-author">MARQUIS DE SADE</span>
+        <span class="book-title">The 120 Days of Sodom</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574764"
+    target="_blank">
+      <img src="assets/books/iamacat.jpg" alt="I Am a Cat">
+      <div class="book-info">
+        <span class="book-number">#038</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">I Am a Cat</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574765"
+    target="_blank">
+      <img src="assets/books/botchan.jpg" alt="Botchan">
+      <div class="book-info">
+        <span class="book-number">#039</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">Botchan</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574854"
+    target="_blank">
+      <img src="assets/books/kokoro.jpg" alt="Kokoro">
+      <div class="book-info">
+        <span class="book-number">#040</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">Kokoro</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000214545967"
+    target="_blank">
+      <img src="assets/books/augustdevil.jpg" alt="August is a Wicked Month">
+      <div class="book-info">
+        <span class="book-number">#041</span>
+        <span class="book-author">EDNA O'BRIEN</span>
+        <span class="book-title">August is a Wichked Month</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574766"
+    target="_blank">
+      <img src="assets/books/kusamakura.jpg" alt="Kusamakura">
+      <div class="book-info">
+        <span class="book-number">#042</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">Kusamakura</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574830"
+    target="_blank">
+      <img src="assets/books/wayfarer.jpg" alt="The Wayfarer">
+      <div class="book-info">
+        <span class="book-number">#043</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">The Wayfarer</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574791"
+    target="_blank">
+      <img src="assets/books/sanshiro.jpg" alt="Sanshirō">
+      <div class="book-info">
+        <span class="book-number">#044</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">Sanshirō</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574792"
+    target="_blank">
+      <img src="assets/books/andthen.jpg" alt="And Then">
+      <div class="book-info">
+        <span class="book-number">#045</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">And Then</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574828"
+    target="_blank">
+      <img src="assets/books/gate.jpg" alt="The Gate">
+      <div class="book-info">
+        <span class="book-number">#046</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">The Gate</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574789"
+    target="_blank">
+      <img src="assets/books/poppy.jpg" alt="The Poppy">
+      <div class="book-info">
+        <span class="book-number">#047</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">The Poppy</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000574790"
+    target="_blank">
+      <img src="assets/books/miner.jpg" alt="The Miner">
+      <div class="book-info">
+        <span class="book-number">#048</span>
+        <span class="book-author">NATSUME SOSEKI</span>
+        <span class="book-title">The Miner</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000001683608"
+    target="_blank">
+      <img src="assets/books/kholstomer.jpg" alt="Kholstomer">
+      <div class="book-info">
+        <span class="book-number">#049</span>
+        <span class="book-author">TOLSTOY</span>
+        <span class="book-title">Kholstomer / What For?</span>
+      </div>
+    </a>
+
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000610650"
+    target="_blank">
+      <img src="assets/books/vegetarian.jpg" alt="The Vegetarian">
+      <div class="book-info">
+        <span class="book-number">#050</span>
+        <span class="book-author">HAN KANG</span>
+        <span class="book-title">The Vegetarian</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000779649"
+    target="_blank">
+      <img src="assets/books/shokosmile.jpg" alt="Shoko's Smile">
+      <div class="book-info">
+        <span class="book-number">#051</span>
+        <span class="book-author">CHOI EUN-YOUNG</span>
+        <span class="book-title">Shoko's Smile</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000570016"
+    target="_blank">
+      <img src="assets/books/hysteria.jpg" alt="Hysteria">
+      <div class="book-info">
+        <span class="book-number">#052</span>
+        <span class="book-author">KIM I-DEUM</span>
+        <span class="book-title">Hysteria</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000001944878"
+    target="_blank">
+      <img src="assets/books/minorfeelings.jpg" alt="Minor Feelings">
+      <div class="book-info">
+        <span class="book-number">#053</span>
+        <span class="book-author">CATHY PARK HONG</span>
+        <span class="book-title">Minor Feelings</span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620148"
+    target="_blank">
+      <img src="assets/books/ofhumanbondage.jpg" alt="Of Human Bondage">
+
+      <div class="book-info">
+        <span class="book-number">#055</span>
+
+        <span class="book-author">
+          W. SOMERSET MAUGHAM
+        </span>
+
+        <span class="book-title">
+          Of Human Bondage
+        </span>
+      </div>
+    </a>
+
+        <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000777645"
+        target="_blank">
+      <img src="assets/books/trial.jpg" alt="The Trial">
+
+      <div class="book-info">
+        <span class="book-number">#056</span>
+
+        <span class="book-author">
+          FRANZ KAFKA
+        </span>
+
+        <span class="book-title">
+          The Trial
+        </span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000201296288"
+    target="_blank">
+      <img src="assets/books/manwithoutqualities.jpg" alt="The Man Without Qualities">
+
+      <div class="book-info">
+        <span class="book-number">#057</span>
+
+        <span class="book-author">
+          ROBERT MUSIL
+        </span>
+
+        <span class="book-title">
+          The Man Without Qualities
+        </span>
+      </div>
+    </a>
+
+    <a class="book-card" href="https://product.kyobobook.co.kr/detail/S000000620180"
+    target="_blank">
+      <img src="assets/books/waitinggodot.jpg" alt="Waiting for Godot">
+
+      <div class="book-info">
+        <span class="book-number">#058</span>
+
+        <span class="book-author">
+          SAMUEL BECKETT
+        </span>
+
+        <span class="book-title">
+          Waiting for Godot
+        </span>
+      </div>
+    </a>
+
+
+    </div>
+  </div>
+
+  <div class="author-map-section">
+
+  <div class="author-map-head">
+    <p>Author Map</p>
+    <h2>Reading Treemap</h2>
+  </div>
+
+  <div class="author-card" id="authorCard">
+    <button class="author-card-close" id="authorCardClose">×</button>
+    <p class="author-card-label">Selected Author</p>
+    <h3 id="authorCardName"></h3>
+    <p id="authorCardCount"></p>
+    <div id="authorCardBooks"></div>
+  </div>
+
+  <div class="author-treemap">
+
+    <button class="author-block soseki" data-author="NATSUME SOSEKI">
+      Natsume Soseki
+    </button>
+
+    <button class="author-block ernaux" data-author="ANNIE ERNAUX">
+      Annie Ernaux
+    </button>
+
+    <button class="author-block camus" data-author="ALBERT CAMUS">
+      Albert Camus
+    </button>
+
+    <button class="author-block debotton" data-author="ALAIN DE BOTTON">
+      Alain de Botton
+    </button>
+
+    <button class="author-block kundera" data-author="MILAN KUNDERA">
+      Milan Kundera
+    </button>
+
+    <button class="author-block hesse" data-author="HERMANN HESSE">
+      Hermann Hesse
+    </button>
+
+    <button class="author-block saramago" data-author="JOSÉ SARAMAGO">
+      José Saramago
+    </button>
+
+    <button class="author-block maugham" data-author="W. SOMERSET MAUGHAM">
+      W. Somerset Maugham
+    </button>
+
+    <button class="author-block mishima" data-author="YUKIO MISHIMA">
+      Yukio Mishima
+    </button>
+
+    <button class="author-block one" data-author="FRANZ KAFKA">
+      Franz Kafka
+    </button>
+
+    <button class="author-block one" data-author="FYODOR DOSTOEVSKY">
+      Dostoevsky
+    </button>
+
+    <button class="author-block one" data-author="VLADIMIR NABOKOV">
+      Nabokov
+    </button>
+
+    <button class="author-block one" data-author="HARUKI MURAKAMI">
+      Murakami
+    </button>
+
+    <button class="author-block one" data-author="ROBERT MUSIL">
+      Robert Musil
+    </button>
+
+        <button class="author-block one" data-author="SAMUEL BECKETT">
+      Samuel Beckett
+    </button>
+
+    <button class="author-block one" data-author="AGOTA KRISTOF">
+      Agota Kristof
+    </button>
+    <button class="author-block one" data-author="YI SANG">
+      Yi Sang
+    </button>
+    <button class="author-block one" data-author="KAWABATA YASUNARI">
+      Kawabata
+    </button>
+    <button class="author-block one" data-author="JEAN-PAUL SARTRE">
+      Sartre
+    </button>
+    <button class="author-block one" data-author="WILLIAM FAULKNER">
+      Faulkner
+    </button>
+    <button class="author-block one" data-author="NIKOS KAZANTZAKIS">
+      Kazantzakis
+    </button>
+    <button class="author-block one" data-author="EMIL AZAR">
+      Emil Ajar
+    </button>
+    <button class="author-block one" data-author="CHOI JIN-YOUNG">
+      Choi Jin-young
+    </button>
+    <button class="author-block one" data-author="IAN McEWAN">
+      Ian McEwan
+    </button>
+    <button class="author-block one" data-author="THOMAS PYNCHON">
+      Thomas Pynchon
+    </button>
+    <button class="author-block one" data-author="ANTON CHEKHOV">
+      Anton Chekhov
+    </button>
+    <button class="author-block one" data-author="THOMAS MANN">
+      Thomas Mann
+    </button>
+    <button class="author-block one" data-author="MARGUERITE DURAS">
+      Marguerite Duras
+    </button>
+    <button class="author-block one" data-author="GOETHE">
+      Goethe
+    </button>
+    <button class="author-block one" data-author="THERESA HAK-KYUNG CHA">
+      Theresa Hak-Kyung Cha
+    </button>
+    <button class="author-block one" data-author="MARQUIS DE SADE">
+      Marquis de Sade
+    </button>
+    <button class="author-block one" data-author="EDNA O'BRIEN">
+      Edna O'Brien
+    </button>
+    <button class="author-block one" data-author="TOLSTOY">
+      Tolstoy
+    </button>
+    <button class="author-block one" data-author="HAN KANG">
+      Han Kang
+    </button>
+    <button class="author-block one" data-author="CHOI EUN-YOUNG">
+      Choi Eun-young
+    </button>
+    <button class="author-block one" data-author="KIM I-DEUM">
+      Kim I-deum
+    </button>
+    <button class="author-block one" data-author="CATHY PARK HONG">
+      Cathy Park Hong
+    </button>
+
+  </div>
+
+</div>
+
+<div class="ascii-deer-bg" aria-hidden="true">
+<pre>
+⠀⠀⠀⠀⠀⠀⠀⣀⡄⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠐⢿⠓⠀⢀⡴⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠹⡒⠤⣀⡀⠀⢀⡴⠋⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠱⡀⠀⠉⠑⠋⠀⠀⣸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⢱⡄⠀⠀⠀⠀⠀⠉⠒⠤⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣈⠵⠦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⡤⠋⣀⣀⣀⣤⠀⠀⠀⢰⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠈⠉⠁⠀⠀⠀⠀⢧⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢐⣶⣆⠀⠀⢠⠈⢇⢰⠃⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⣰⡄⠀⠀⠀⠀⠀⠀
+⠀⠈⠙⠀⠀⠀⣏⣧⠈⠟⠀⠀⠀⠀⠀⠀⠽⡿⠆⠀⠀⠀⢀⣿⣿⣦⣶⣶⠟⠀⠀
+⠀⠀⠀⠀⣀⣸⣿⣯⢧⠤⢤⣤⣴⠦⠀⠀⠀⠁⠀⠀⠛⠿⣿⣿⣿⣿⣿⡁⠀⠀⠀
+⠀⠙⠯⡻⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠰⣄⣠⡇⠀⠀⠀⠀⢸⣿⡿⠛⠛⠿⣆⠀⠀
+⠀⠀⠀⠈⢻⣿⣿⣿⣿⣿⠁⠀⠀⠀⣠⢿⣿⠟⠒⠀⠀⠀⠸⠊⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡾⣿⠿⠺⢝⡯⢧⠀⠀⠀⠀⠀⠻⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢼⠓⠁⠀⠀⠀⠉⠺⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢿⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⠈⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢟⡒⠒⠛⠁⠀⠘⠒⠒⢲⡶⠂⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⡆⠀⠈⢢⠀⠀⠀⠀⡤⠚⠁⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⠉⠀⢠⠇⢀⡤⣀⠀⢳⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⠊⠁⠀⠈⠳⣼⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⡄⠀⣀⠀⠀⢀⣄⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠶⢾⣿⣟⠁⠀⠀⠺⡟⠃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡏⢉⠓⠀⠀⠀⠀⠀
+</pre>
+</div>
+
+<div class="five-star-books">
+
+  <div class="five-star-head">
+    <h2>★ ★ ★ ★ ★ BOOKS</h2>
+  </div>
+
+  <div class="five-star-scale">
+
+    <div class="five-star-track">
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000574789" target="_blank">
+        <img src="assets/books/poppy.jpg" alt="The Poppy">
+        <span>Natsume Soseki</span>
+        <strong>The Poppy</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000620701" target="_blank">
+        <img src="assets/books/springsnow.jpg" alt="Spring Snow">
+        <span>Yukio Mishima</span>
+        <strong>Spring Snow</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000407340" target="_blank">
+        <img src="assets/books/goldenpavilion.jpg" alt="The Temple of the Golden Pavilion">
+        <span>Yukio Mishima</span>
+        <strong>The Temple of the Golden Pavilion</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000620351" target="_blank">
+        <img src="assets/books/razorsedge.jpg" alt="The Razor's Edge">
+        <span>W. Somerset Maugham</span>
+        <strong>The Razor's Edge</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000061863290" target="_blank">
+        <img src="assets/books/trilogy.jpg" alt="The Notebook, The Proof, The Third Lie">
+        <span>Agota Kristof</span>
+        <strong>The Notebook, The Proof, The Third Lie</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000620480" target="_blank">
+        <img src="assets/books/sisyphus.jpg" alt="The Myth of Sisyphus">
+        <span>Albert Camus</span>
+        <strong>The Myth of Sisyphus</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000620180">
+        <img src="assets/books/waitinggodot.jpg" alt="Waiting for Godot">
+        <span>Samuel Beckett</span>
+        <strong>Waiting for Godot</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000215970366" target="_blank">
+        <img src="assets/books/yi-sang.jpg" alt="Selected Works of Yi Sang">
+        <span>Yi Sang</span>
+        <strong>Selected Works of Yi Sang</strong>
+      </a>
+
+      <a class="five-star-card" href="https://product.kyobobook.co.kr/detail/S000000549260" target="_blank">
+        <img src="assets/books/nausea.jpg" alt="Nausea">
+        <span>Jean-Paul Sartre</span>
+        <strong>Nausea</strong>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<section class="media-section" id="media">
+
+  <div class="media-album">
+
+    <div class="media-album-head">
+      <p>Media Album</p>
+      <h2>Album</h2>
+    </div>
+
+<div class="media-scale-wrap">
+  <div class="media-grid">
+
+  <figure class="media-item media-video-1">
+    <video src="assets/media/video1.mp4" autoplay muted loop playsinline></video>
+  </figure>
+
+  <figure class="media-item media-photo-1">
+    <img src="assets/media/photo1.jpg" alt="Photo 01">
+  </figure>
+
+  <figure class="media-item media-photo-2">
+    <img src="assets/media/photo2.jpg" alt="Photo 02">
+  </figure>
+
+  <figure class="media-item media-photo-3">
+    <img src="assets/media/photo3.jpg" alt="Photo 03">
+  </figure>
+
+  <figure class="media-item media-photo-4">
+    <img src="assets/media/photo4.jpg" alt="Photo 04">
+  </figure>
+
+  <figure class="media-item media-photo-5">
+    <img src="assets/media/photo5.jpg" alt="Photo 05">
+  </figure>
+
+  <figure class="media-item media-photo-6">
+    <img src="assets/media/photo6.jpg" alt="Photo 06">
+  </figure>
+
+  <figure class="media-item media-photo-7">
+    <img src="assets/media/photo7.jpg" alt="Photo 07">
+  </figure>
+
+  <figure class="media-item media-photo-8">
+    <img src="assets/media/photo8.jpg" alt="Photo 08">
+  </figure>
+
+</div>
+
+  </div>
+  </div>
+
+</section>
+
+<div class="media-lightbox" id="mediaLightbox">
+  <div class="media-lightbox-bg"></div>
+
+  <div class="media-lightbox-content" id="mediaLightboxContent">
+  </div>
+</div>
+
+
+
+
 
   </main>
 
   <script src="assets/script.js"></script>
 </body>
-
 </html>
