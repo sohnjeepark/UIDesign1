@@ -309,7 +309,7 @@ asciiSwitchLinks.forEach((link) => {
 
     setTimeout(() => {
       window.location.href = target;
-    }, 360);
+    }, 160);
   });
 });
 
